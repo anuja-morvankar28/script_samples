@@ -1,1 +1,1 @@
-# script_samples
+# script-samples
