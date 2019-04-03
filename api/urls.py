@@ -6,4 +6,6 @@ api = Blueprint('api', __name__)
     here we defined class field names
 
     """
-api.add_url_rule('/demo-api/https://angus.readthedocs.io/en/2016/LC-github.html', view_func=get_demo_api, methods=['GET'])
+api_v1.add_url_rule('/demo-api/', view_func=get_demo_api, methods=['GET'])
+api_v1.add_url_rule('/demo-api/', view_func=post_demo_api, methods=['POST'])
+api_v1.add_url_rule('/demo-api/', view_func=delete_api, methods=['DELETE'])
